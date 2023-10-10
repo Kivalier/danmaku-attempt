@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Game Objects",
+    "path": "folders/Objects/Game Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fairy",
-    "path": "sprites/spr_fairy/spr_fairy.yy",
+    "name": "spr_sprite",
+    "path": "sprites/spr_sprite/spr_sprite.yy",
   },
   "spriteMaskId": null,
   "visible": true,

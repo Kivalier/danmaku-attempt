@@ -5,28 +5,32 @@
 // if maxbullet is lower or equal to bulletcounter then we do nothing
 // we skip execution, basically
 //show_debug_message(string(maxbullet) + " " + string(bulletcounter)) 
-if (maxbullet and maxbullet <= bulletcounter) 
-{
-	return
-}
+if maxbullet and maxbullet <= bulletcounter then begin return end
+
 
 alarm[0] = 20
-var bullet = instance_create_depth(x,y,0,obj_bullet1)
+
 bulletcounter++
 
-// switches between different phases
+// switches between different bullet mode / phases
 switch (mode)
 {
-	// phase 0
-	case 0:
+	// mode 0
+	case FAIRY_MODE.TARGETING: {
+		var bullet = instance_create_bullet(x, y, "red", 1, .25)
 		bullet.direction = point_direction(x, y, obj_player.x, obj_player.y)
-		bullet.speed = bulletspeed
-	break
+		
+		break
+	}
+	// mode 1
+	case FAIRY_MODE.NORMAL: {
+		var bullet = instance_create_bullet(x, y, "blue", 3, .10)
+		bullet.direction = DIRECTION.DOWN
+		
+		break
+	}
 	
-	case 1:
-	
-	break
-	
+	// mode 2
 	case 2:
 	
 	break

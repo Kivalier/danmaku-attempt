@@ -3,17 +3,16 @@
 
 //destination = (global.play_width - global.play_offset_width) / 2
 
-// this controls the speed of the fairies
-movespeed = 3
+enum FAIRY_MODE {
+	TARGETING = 0,
+	NORMAL = 1,
+}
 
-// this controls the destination
-destination = 0
+// Has this fairy been in the stage yet
+fresh = true
 
 // type of bullet fired 
-mode = 0
-
-// bullet speed
-bulletspeed = 1
+mode = FAIRY_MODE.TARGETING
 
 // the maximum amount of bullets, 0 to disable
 maxbullet = 0

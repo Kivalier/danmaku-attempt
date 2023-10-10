@@ -12,7 +12,7 @@ if [xmove, ymove] != 0
 
 // player speed when shifting (2) otherwise it is 5
 movespeed = keyboard_check(vk_shift) ? 2 : 5 
-
+	
 // checks if i can shoot or not and press spacebar
 if canshoot and keyboard_check(vk_space)  
 {

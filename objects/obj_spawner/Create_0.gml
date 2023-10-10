@@ -5,10 +5,10 @@
 alarm[0] = 60
 
 // phase timer
-alarm[1] = 1000 
-
-// amount of faries to spawn
-amount = 20
+alarm[1] = 300
 
 // phase number
 phase = 0
+
+// fairy counter
+fairycount = 0
