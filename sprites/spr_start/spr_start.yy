@@ -20,10 +20,10 @@
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bab7f662-37d5-40f9-9ccc-2f15bdbfd4c8","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bab7f662-37d5-40f9-9ccc-2f15bdbfd4c8","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":false,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 3,
   "parent": {
     "name": "Menu UI",
     "path": "folders/Sprites/Menu UI.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 16,
+    "xorigin": 0,
     "yorigin": 16,
   },
   "swatchColours": null,

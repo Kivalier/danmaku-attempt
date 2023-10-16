@@ -170,6 +170,13 @@
   "ranges": [
     {"lower":32,"upper":127,},
     {"lower":9647,"upper":9647,},
+    {"lower":12383,"upper":12383,},
+    {"lower":12398,"upper":12398,},
+    {"lower":12417,"upper":12417,},
+    {"lower":21531,"upper":21531,},
+    {"lower":21629,"upper":21629,},
+    {"lower":23478,"upper":23478,},
+    {"lower":38761,"upper":38761,},
   ],
   "regenerateBitmap": false,
   "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
