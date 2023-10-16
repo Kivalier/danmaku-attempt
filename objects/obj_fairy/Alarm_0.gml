@@ -15,23 +15,25 @@ bulletcounter++
 // switches between different bullet mode / phases
 switch (mode)
 {
-	// mode 0
-	case FAIRY_MODE.TARGETING: {
-		var bullet = instance_create_bullet(x, y, "red", 1, .25)
-		bullet.direction = point_direction(x, y, obj_player.x, obj_player.y)
-		
-		break
-	}
-	// mode 1
 	case FAIRY_MODE.NORMAL: {
-		var bullet = instance_create_bullet(x, y, "blue", 3, .10)
-		bullet.direction = DIRECTION.DOWN
+		var bullet			= instance_create_bullet(x, y, "blue", 3, .10)
+		bullet.direction	= DIRECTION.DOWN
 		
 		break
 	}
-	
-	// mode 2
-	case 2:
-	
-	break
+	case FAIRY_MODE.TARGETING: {
+		var bullet			= instance_create_bullet(x, y, "red", 3, .25)
+		bullet.direction	= point_direction(x, y, obj_player.x, obj_player.y)
+
+		break
+	}
+	case FAIRY_MODE.RANDOM: { 
+		var bullet			= instance_create_bullet(x, y, "green", 4, .10)
+		bullet.direction	= irandom_range(-180, 0)
+		
+		break
+	}
+	case FAIRY_MODE.RAINBOW: 
+		//chimata
+		break
 }

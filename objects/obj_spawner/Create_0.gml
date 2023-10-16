@@ -5,10 +5,11 @@
 alarm[0] = 60
 
 // phase timer
-alarm[1] = 300
+alarm[1] = 100
 
 // phase number
 phase = 0
 
 // fairy counter
 fairycount = 0
+fairyamount = infinity

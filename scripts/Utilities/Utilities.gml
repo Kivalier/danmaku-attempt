@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 #macro STAGE_OFFSET_WIDTH	64
 #macro STAGE_WIDTH			(640 - STAGE_OFFSET_WIDTH)
 #macro STAGE_HEIGHT			736
@@ -20,15 +21,15 @@ function stage_pos(x = 0, y = 0) {
 
 // This use room position
 function instance_is_in_stage() {
-	if self.x < STAGE_OFFSET_WIDTH {
+	if self.x < STAGE_OFFSET_WIDTH - 64 {
 		return false
 	}
 	
-	if self.x > STAGE_RAW_WIDTH {
+	if self.x > STAGE_RAW_WIDTH + 64 {
 		return false
 	}
 
-	if self.y > STAGE_HEIGHT {
+	if self.y > STAGE_HEIGHT + 64 {
 		return false
 	}
 	
@@ -67,3 +68,19 @@ function instance_create_fairy(x, y, data = {}) {
 	// Dai-chan cute
 	return fairy
 }
+
+function string_comma(str) {
+	var s = string(str)
+	
+	for (var i = string_length(s) - 2; i > 1; i -= 3) {
+		s = string_insert(",", s, i)
+	}
+	
+	return s
+}
+
+function string_padding(int, amt, pad = "0") {
+	var s = string_format(int, amt, 0)
+	return string_replace_all(s, " ", pad)
+}
+		

@@ -4,8 +4,10 @@
 //destination = (global.play_width - global.play_offset_width) / 2
 
 enum FAIRY_MODE {
-	TARGETING = 0,
-	NORMAL = 1,
+	NORMAL = 0,
+	TARGETING = 1,
+	RANDOM = 2,
+	RAINBOW = 3,
 }
 
 // Has this fairy been in the stage yet

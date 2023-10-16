@@ -7,6 +7,9 @@ movespeed = 5
 // if player canshoot
 canshoot = true
 
+bomb = 2
+life = 3
+invul = false
 
 
 
