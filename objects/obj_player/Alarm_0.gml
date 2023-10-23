@@ -3,4 +3,3 @@
 
 canshoot = true;
 
-invul = false

@@ -11,15 +11,23 @@ draw_set_font(fnt_eosdsmall)
 draw_set_colour(c_white)
 draw_set_halign(fa_center)
 
-draw_text(192, 256, get_lng_var("credit_music"))
 
-draw_text(640, 256, "君のための革命家君のための革命家  -  Ria Kawasaki")
 
-draw_text(192, 384, get_lng_var("credit_fonts"))
-draw_text(640, 384, "Monday Rain  -  Khurasan")
-draw_text(640, 418, "DFPPOPCorn-W12  -  DynaComware")
 
-draw_text(192, 480, get_lng_var("credit_sprites"))
+draw_text(288, 288, "small light  -  L-side")
+draw_text(736, 288, "lost magic  -  Stay safe")
+
+//draw_text(192, 384, get_lng_var("credit_fonts"))
+draw_text(288, 480, "DFPPOPCorn-W12  -  DynaComware")
+draw_text(738, 480, "Monday Rain  -  Khurasan" )
+
+draw_set_font(fnt_eosd)
+draw_text(512, 224, get_lng_var("credit_music"))
+draw_text(512, 352, get_lng_var("credit_sfx"))
+
+
+draw_text(512, 416, get_lng_var("credit_fonts"))
+draw_text(512, 544, get_lng_var("credit_sprites"))
 
 draw_set_font(fnt_eosdbig)
 draw_text(512, 128, get_lng_var("credit_credits"))

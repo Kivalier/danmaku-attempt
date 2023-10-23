@@ -33,14 +33,18 @@ function instance_is_in_stage() {
 		return false
 	}
 	
+	if self.y < 32 {
+		return false
+	}
+	
 	return true
 }
 
 function instance_create_bullet(x, y, colour, _speed, scale) {
 	static bullets = {
-		red: spr_bullet1,
-		blue: spr_bullet2,
-		green: spr_bullet3
+		red: spr_bullet1_1,
+		blue: spr_bullet1_2,
+		green: spr_bullet1_3
 	}
 	
 	var bullet = instance_create_depth(x, y, 0, obj_bullet1)
@@ -54,16 +58,18 @@ function instance_create_bullet(x, y, colour, _speed, scale) {
 
 function instance_create_fairy(x, y, data = {}) {
 	static fairies = {
-		white: spr_fairy,
+		pink: spr_fairy1,
+		blue: spr_fairy2,
+		red: spr_fairy3,
 	}
 	
 	var fairy = instance_create_depth(x, y, 0, obj_fairy)
-	fairy.sprite_index	= fairies[$ data.colour ?? "white"]
-	fairy.direction		= data.direction ?? DIRECTION.DOWN
-	fairy.speed			= data.speed ?? 3
-	fairy.mode			= data.mode ?? FAIRY_MODE.NORMAL
-	fairy.maxbullet		= data.maxbullet ?? 0
-	fairy.dest			= data.dest ?? false // Change later
+	fairy.sprite_index	= fairies[$ data.colour ?? "pink"]
+	fairy.direction		= struct_exists(data, "direction") ? data.direction : DIRECTION.DOWN
+	fairy.speed			= struct_exists(data, "speed") ? data.speed : 3
+	fairy.mode			= struct_exists(data, "mode") ? data.mode : FAIRY_MODE.NORMAL
+	fairy.maxbullet		= struct_exists(data, "maxbullet") ? data.maxbullet : 0
+	fairy.dest			= struct_exists(data, "dest") ? data.dest : [] // it has been Chang'e
 	
 	// Dai-chan cute
 	return fairy

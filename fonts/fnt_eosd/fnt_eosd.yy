@@ -126,8 +126,8 @@
   "lineHeight": 33,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Fonts",
-    "path": "folders/Fonts.yy",
+    "name": "Popcorn",
+    "path": "folders/Fonts/Popcorn.yy",
   },
   "pointRounding": 0,
   "ranges": [

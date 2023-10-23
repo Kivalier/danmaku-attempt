@@ -1,16 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_set_colour(c_red)
-draw_set_font(fnt_indev)
-draw_text(352, 752, "Game is currently in the INDEV phase. Features and final game design subject to change.")
-// phase counter
+//draw_set_colour(c_red)
+//draw_set_font(fnt_indev)
+//draw_text(352, 752, "Game is currently in the INDEV phase. Features and final game design subject to change.")
+//// phase counter
 //draw_set_font(-1)
-
+//
 //draw_text(125, 16, "Phase:" + string(obj_spawner.phase))
+//
 //draw_text(225, 16, "Phase:" + string(obj_spawner.alarm[1]))
-
-//draw_text(100, 150, "Mode:" + string(obj_fairy.mode))
+//
+//draw_text(425, 16, "Fps:" + string(fps) + " / " + string(fps_real))
+//
+//draw_text(555, 16, "Objects: " + string(instance_count))
 
 draw_set_colour(c_white)
 draw_set_font(fnt_eosdbig)

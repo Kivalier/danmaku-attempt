@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Objects",
-    "path": "folders/Objects/Game Objects.yy",
+    "name": "Credits",
+    "path": "folders/Objects/Menu UI/Credits.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -25,11 +25,13 @@ if canshoot and keyboard_check(ord("Z"))
 
 if bomb > 0 and keyboard_check_pressed(ord("X"))
 {
-	instance_destroy(obj_fairy)
-	instance_destroy(obj_bullet1)
 	bomb--
+	audio_play_sound(snd_bomb, 1, false)
+	if instance_exists(obj_fairy) then begin obj_fairy.hp -= 500 end else return
+	if instance_exists(obj_bullet1) then begin instance_destroy(obj_bullet1) end
+
 }
 
-if life < 1 {
-	room_goto(room_gameover)
-}
+//if life < 1 {
+//	room_goto(room_gameover)
+//}

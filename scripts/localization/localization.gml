@@ -20,9 +20,10 @@ global.localisation = {
 		control_arrows:		"Arrows - Movement",
 		
 		credit_credits:		"Credits",
-		credit_fonts:		"Fonts:",
-		credit_music:		"Music:",
-		credit_sprites:		"Sprites:",
+		credit_fonts:		"Fonts",
+		credit_music:		"Music  -  HURT RECORD",
+		credit_sfx:			"Sound Effects  -  Pixabay.com",
+		credit_sprites:		"Sprites  -  Miguel Gloria",
 		
 		game_title:			"Magus Night",
 		game_hiscore:		"Highscore",
@@ -47,8 +48,9 @@ global.localisation = {
 		
 		credit_credits:		"Whakaaetanga",
 		credit_fonts:		"Momotuhi",
-		credit_music:		"Puoro",
-		credit_sprites:		"Toi Ataata",
+		credit_music:		"Puoro  -  HURT RECORD",
+		credit_sfx:			"Orotaunaki  -  Pixabay.com",
+		credit_sprites:		"Toi Ataata  -  Miguel Gloria",
 
 		game_title:			"Po Makutu",
 		game_hiscore:		"Kaute Teitei",
